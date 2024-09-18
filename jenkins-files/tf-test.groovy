@@ -13,7 +13,7 @@ pipeline {
                 sh '''
                   set -x
                   gcloud auth activate-service-account  ansible@gcp-learning-428307.iam.gserviceaccount.com --key-file=/var/lib/jenkins/gke.json
-                  cd /var/lib/jenkins/workspace/git-checkout-pipeline/
+                  cd /var/lib/jenkins/workspace/git-checkout-pipeline/terraform-files/
                   terraform init
                 '''
             }
